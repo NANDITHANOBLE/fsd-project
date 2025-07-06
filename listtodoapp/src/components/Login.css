@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+    animation: floatIn 1.2s ease-out forwards;
+  }
+  
+  .taskify-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 1.5rem;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .login-form input:focus {
+    border-color: #1976d2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #125ea5;
+  }
+  
+  .login-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .login-footer a {
+    color: #1976d2;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes floatIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+  }
+  
